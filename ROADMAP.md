@@ -4,10 +4,10 @@
 
 ## فاز ۰ — اعتبارسنجی و تحقیق (وضعیت فعلی)
 هدف: پیدا کردن اولین design partner و فهم دقیق دامنه قبل از نوشتن کد محصولی.
-- [ ] شناسایی و مصاحبه با ۳-۵ سازمان هدف (مخابرات/نیروگاه/دیتاسنتر) برای اعتبارسنجی درد و willingness-to-pay
-- [ ] بررسی برندها و پروتکل‌های ارتباطی رایج رکتیفایر/شارژر در ایران (Modbus/SNMP/اختصاصی)
-- [ ] تعیین اولین design partner برای پایلوت
-- [ ] تعریف معیار موفقیت پایلوت (٪ کاهش خرابی ناگهانی، دقت پیش‌بینی)
+- [ ] شناسایی و مصاحبه با ۳-۵ سازمان هدف (مخابرات/نیروگاه/دیتاسنتر) برای اعتبارسنجی درد و willingness-to-pay — راهنما: [`docs/research/interview-guide.md`](docs/research/interview-guide.md)
+- [x] بررسی برندها و پروتکل‌های ارتباطی رایج رکتیفایر/شارژر در ایران (Modbus/SNMP/اختصاصی) — نتایج: [`docs/research/rectifier-brands-protocols.md`](docs/research/rectifier-brands-protocols.md)
+- [ ] تعیین اولین design partner برای پایلوت — چارچوب تصمیم: [`docs/research/design-partner-criteria.md`](docs/research/design-partner-criteria.md)
+- [ ] تعریف معیار موفقیت پایلوت (٪ کاهش خرابی ناگهانی، دقت پیش‌بینی) — تعریف کامل: [`docs/research/pilot-kpis.md`](docs/research/pilot-kpis.md)
 
 ## فاز ۱ — MVP: پایش زنده (بدون AI)
 هدف: اثبات جمع‌آوری داده‌ی قابل‌اعتماد و ارزش یک داشبورد پایه برای design partner اول.
