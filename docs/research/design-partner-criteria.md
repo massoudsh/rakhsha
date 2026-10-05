@@ -1,6 +1,7 @@
 # معیار انتخاب و چک‌لیست قرارداد اولین Design Partner
 
 > مرتبط با Issue [#4](https://github.com/massoudsh/rakhsha/issues/4) — فاز ۰ (تحقیق دامنه)
+> این سند گام‌های ۲-۳ استراتژی ورود اول را اجرا می‌کند: `strategy-1-telecom-datacenter-pilot.md`
 
 ## ⚠️ محدودیت این سند
 انتخاب واقعی design partner یک **تصمیم تجاری/انسانی** است که باید بعد از مصاحبه‌های واقعی
