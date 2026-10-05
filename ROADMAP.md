@@ -34,7 +34,7 @@
 - [ ] قرارداد enterprise دوم و سوم
 
 ## فاز ۴ — Enterprise و توسعه‌ی منطقه‌ای
-هدف: تبدیل‌شدن به لایه‌ی استاندارد مدیریت دارایی برق DC.
+هدف: تبدیل‌شدن به لایه‌ی استاندارد مدیریت دارایی برق DC. مسیر ورود سازمانی: [`docs/research/strategy-2-enterprise-power-oil-gas.md`](docs/research/strategy-2-enterprise-power-oil-gas.md)
 - [ ] گزینه‌ی on-prem/air-gapped برای سایت‌های حساس (نفت و گاز، نظامی)
 - [ ] گسترش پوشش تجهیزات: UPS، اینورتر خورشیدی، سایر تجهیزات DC حیاتی
 - [ ] گواهی‌ها/انطباق موردنیاز مشتریان enterprise
