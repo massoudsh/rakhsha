@@ -1,7 +1,8 @@
 'use strict';
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
-const { readFileSync } = require('node:fs');
+const { readFileSync, existsSync } = require('node:fs');
+const { resolve } = require('node:path');
 const { sites, alerts, periods, filterSites, chartMarkup, reportCsv } = require('./app.js');
 
 test('demo fleet has six unique sites and consistent health counts', () => {
@@ -49,4 +50,22 @@ test('document has unique IDs and matching application selectors', () => {
   assert.match(html, /aria-live="polite"/);
   assert.match(html, /<dialog/);
   assert.match(html, /All sites, measurements and alerts are simulated/);
+});
+test('root entry points to frontend and local frontend assets exist', () => {
+  const root = readFileSync(resolve(__dirname, '../index.html'), 'utf8');
+  assert.match(root, /content="0;url=\.\/frontend\/"/);
+  const html = readFileSync(resolve(__dirname, 'index.html'), 'utf8');
+  for (const match of html.matchAll(/(?:href|src)="([^"#]+\.(?:css|js))"/g)) {
+    assert.ok(existsSync(resolve(__dirname, match[1])), `Missing asset ${match[1]}`);
+  }
+  for (const folder of ['backend', 'db']) {
+    assert.ok(existsSync(resolve(__dirname, '..', folder, '.gitkeep')));
+  }
+});
+test('glassy theme includes a non-blur fallback and reduced-transparency option', () => {
+  const css = readFileSync(resolve(__dirname, 'styles.css'), 'utf8');
+  assert.match(css, /radial-gradient/);
+  assert.match(css, /@supports \(\(backdrop-filter/);
+  assert.match(css, /prefers-reduced-transparency: reduce/);
+  assert.match(css, /background: rgba\(255, 255, 255, \.85\)/);
 });
